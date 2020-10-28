@@ -1,15 +1,17 @@
-def game():
+import random
+num1= int(input ("enter a num")):
+num2=int(input("enetr a num")):
+num3 =random(radint(num1,num2)):
+guess=int(input("guess the number")):
 
-    import random
+    
+    if   num3 > guess :
+        print ( " lower number " )
+        
 
-    a = int(input("previous one"))
-    b = int(input("next one "))
-    c = random.randint(a, b)
-
-  guess = int(input("Guess a number "))
-if c<guess:
-print("your guess  is higher")
-elif c>guess:
-print("Your guess is lower")
-elif c==guess:
-print("your guess  is perfect")
+    if num3 < guess : 
+        print ( "  higher number" )
+        
+        
+    if num3 == guess : 
+        print ( "  perfect ")
