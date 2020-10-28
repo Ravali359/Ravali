@@ -1,17 +1,23 @@
-secret_num = 59
-print ( " Guess a number between 1 and 100")
-num = input ()
+def game():
 
-while ( True ):
-    
-    if   int(num) > sceret_num :
-        print ( " lower number " )
-        num = input ()
+    import random
 
-    if int(num) < secret_num : 
-        print ( " higher number" )
-        num = input ()
-        
-    if int(num) == secret_num : 
-        print ( "Same number ")
-        break
+    a = int(input("previous one"))
+    b = int(input("next one "))
+    c = random.randint(a, b)
+
+  guess = int(input("Guess a number "))
+
+   
+
+    if c<guess:
+
+        print("your guess  is higher")
+
+    elif c>guess:
+
+        print("Your guess is lower")
+
+    elif c==guess:
+
+        print("your guess  is perfect")
