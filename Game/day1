@@ -7,17 +7,9 @@ def game():
     c = random.randint(a, b)
 
   guess = int(input("Guess a number "))
-
-   
-
-    if c<guess:
-
-        print("your guess  is higher")
-
-    elif c>guess:
-
-        print("Your guess is lower")
-
-    elif c==guess:
-
-        print("your guess  is perfect")
+if c<guess:
+print("your guess  is higher")
+elif c>guess:
+print("Your guess is lower")
+elif c==guess:
+print("your guess  is perfect")
